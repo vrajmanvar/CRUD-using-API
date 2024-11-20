@@ -1,0 +1,38 @@
+/* Navbar.css */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34;
+  padding: 1rem;
+  color: white;
+}
+
+.nav-container a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.nav-container .btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-container .btn:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .nav-container a {
+      margin: 0.5rem 0;
+  }
+}

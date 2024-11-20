@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #eaeaea; /* Light background for better contrast */
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  margin-top: 80px;
+  /* background-color: #ffffff; */
+  border-radius: 12px; /* Rounded corners */
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  */
+  padding-bottom: 0px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: 600; /* Bolder font for headings */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .home-container {
+    padding: 1rem;
+  }
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: none; /* Remove border for a cleaner look */
+  border-radius: 10px;
+  padding: 1.2rem;
+  background-color: #f8f9fa; /* Light gray for cards */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between elements */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px; /* Fixed height for uniformity */
+  object-fit:contain;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination-btn {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #007bff; /* Primary color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.pagination-btn.active {
+  background-color: #0056b3; /* Active button color */
+}
+
+.pagination-btn:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Delete Button Styles */
+.btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #dc3545; /* Bootstrap's danger color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover and Focus Effects */
+.btn:hover,
+.btn:focus {
+  background-color: #c82333; /* Darker red on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.btn:active {
+  transform: scale(0.95); /* Button compresses on click */
+}
+
+/* Disabled State */
+.btn:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  color: #888;
+}
+
+/* Update Button Styles */
+.btn2 {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #28a745; /* Green color for update action */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover and Focus Effects */
+.btn2:hover,
+.btn2:focus {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.btn2:active {
+  transform: scale(0.95); /* Button compresses on click */
+}
+
+/* Disabled State */
+.btn2:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  color: #888;
+}
+
+
+/* Update Button Styles */
+.btn3 {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #218aed; /* Green color for update action */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover and Focus Effects */
+.btn3:hover,
+.btn3:focus {
+  background-color: #218aed; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.btn3:active {
+  transform: scale(0.95); /* Button compresses on click */
+}
+
+/* Disabled State */
+.btn3:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  color: #888;
+}
+
+.loader{
+  position: absolute;
+  left: 50%; /* Center the text */
+  transform: translateX(-50%); /* Centering */
+  margin-top: 50px;
+  color: #666; /* Soft color for no posts message */
+}
+

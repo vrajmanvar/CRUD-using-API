@@ -1,0 +1,32 @@
+/* Details.css */
+
+.detail-container {
+    padding: 20px;
+    max-width: 600px; /* Limit the width of the detail view */
+    margin: auto; /* Center the container */
+    border: 1px solid #ccc; /* Add a border around the detail view */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    background-color: #ffffff; /* White background */
+  }
+  
+  h1 {
+    font-size: 24px; /* Set font size for the title */
+    color: #333; /* Dark text color for readability */
+    margin-bottom: 10px; /* Space below the title */
+  }
+  
+  .detail-image {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  p {
+    font-size: 16px; /* Set font size for text paragraphs */
+    line-height: 1.5; /* Improve line spacing for readability */
+    color: #555; /* Lighter text color for description */
+    margin: 5px 0; /* Space between paragraphs */
+  }
+  

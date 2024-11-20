@@ -1,0 +1,117 @@
+/* Background and container styling */
+.geybg {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Input field and select box styling */
+.mobilenumber input,
+.role select,
+.enterotp input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.mobilenumber input:focus,
+.role select:focus,
+.enterotp input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Label styling */
+label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+/* Button styling */
+.genotp .btn,
+.loginbtn .btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.genotp .btn.btn-dark {
+  background-color: #333;
+}
+
+.genotp .btn.btn-dark:hover {
+  background-color: #555;
+}
+
+.loginbtn .btn.btn-success {
+  background-color: #28a745;
+}
+
+.loginbtn .btn.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Error message styling */
+.error-display {
+  text-align: left;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Spacing between form fields */
+.mobilenumber,
+.role,
+.genotp,
+.enterotp,
+.loginbtn {
+  margin-bottom: 20px;
+}
+
+/* OTP display */
+.otp-display {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login {
+    width: 100%;
+    padding: 20px;
+    margin: 0 20px;
+  }
+}
+
+/* Strong text style */
+strong {
+  font-size: 18px;
+  color: #007bff;
+}
